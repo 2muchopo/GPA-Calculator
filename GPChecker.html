@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificer GPA</title>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<style>
+    *{margin: 0;
+    padding: 0;
+box-sizing: border-box;}
+body{background-color: #fff;}
+.container{background-color: lightseagreen;
+            width: 600px ;
+        height: 650px;
+    margin: 0 auto;}
+.container h1{color: white ;
+font-size: 28px;
+text-align: center;
+padding: 10px;}
+.content{background-color: white;
+    width: 500px;
+    margin: 5px auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+.heading{display: flex;
+justify-content: space-between;
+color: lightseagreen;
+padding-top: 10px;
+padding-bottom: 10px;
+font-weight: bold;}
+
+.info {display: flex;
+justify-content: space-between;
+border: 2px solid re;
+padding: 2px;
+color: lightseagreen;}
+input[type = 'text']{
+    width: 205px;
+height: 30px;
+font-size: 18px;
+background-color: lightseagreen;
+border:none;
+color: white;
+outline: none;
+padding-left: 10px;
+border-radius: 4px;}
+input[type = 'number']{
+    width: 85px;
+    height: 30px;
+    font-size: 18px;
+    background-color: lightseagreen;
+    border: none;
+    color: white;
+    outline: none;
+    padding-left: 50px;
+    border-radius: 4px;
+}
+select{ 
+height: 30px;
+width: 50px;
+font-size: 18px;
+background-color: lightseagreen;
+border: none;
+color: white;
+border-radius: 4px;}
+
+.buttons{display: flex;
+justify-content: space-between;
+align-items: center;
+width: 500px;
+margin: 5px auto;
+border: 2px solid whitesmok;
+border-radius: 6px;
+ }
+
+#add{width: 120px;
+height: 40px;
+cursor: pointer;
+font-size: 14px;
+background-color:#3498db ;
+color: white;
+border: none;
+position: relative;
+padding-left: 15px;}
+
+#compute {width: 170px;
+height: 40px;
+cursor: pointer;
+font-size: 16px;
+background-color: white;
+color: lightseagreen;
+border: none;
+position: relative;
+margin-left: 60px;
+font-weight: bold;
+border-radius: 6px;}
+
+#clear{width: 120px;
+height: 40px;
+cursor: pointer;
+font-size: 14px;
+background-color: #ff0f0a;
+color: white;
+border: none;
+position: relative;
+}
+
+.iconify{font-size:20px;
+position: absolute;
+top: 9px;
+left: 5px;}
+
+#add:hover, #compute:hover, #clear:hover{width: 180px;}
+
+
+@media screen and(max-width: 600px){
+        .container{width: 80%;}
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1>GPA CALCULATOR</h1>
+
+        <div class="content" id="content">
+            <div class="heading" id="heading">
+                <h3>Course Title</h3>
+                <h3></h3>
+                <h3></h3>
+                <h3>Grade</h3>
+                <h3>Unit Load</h3>
+            </div>
+        
+            <div class="info">
+            <div><input type="text" ></div> 
+            
+            <div>
+            <select name="option" id="option" class="grade" required>
+            <option value="-">-</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            </select>
+            </div>
+
+            <div><input type="number" class="number" min="0" max="6" required></div>
+            </div>
+            <div class="info">
+                <div><input type="text"></div> 
+                
+                <div>
+                <select name="option" id="option1" class="grade" required>
+                    <option value="-">-</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                </select>
+                </div>
+    
+                <div><input type="number" class="number" min="0" max="6" required></div>
+                </div>
+                <div class="info">
+                    <div><input type="text"></div> 
+                    
+                    <div>
+                    <select name="option" id="option2" class="grade" required>
+                        <option value="-">-</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    </select>
+                    </div>
+        
+                    <div><input type="number" class="number" min="0" max="6" required></div>
+                    </div>
+                    <div class="info">
+                        <div><input type="text"></div> 
+                        
+                        <div>
+                        <select name="option" id="option3" class="grade" required>
+                            <option value="-">-</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                        </div>
+            
+                        <div><input type="number" class="number" min="0" max="6" required></div>
+                        </div>
+                        <div class="info">
+                            <div><input type="text"></div> 
+                            
+                            <div>
+                            <select name="option" id="option4" class="grade" required>
+                                <option value="-">-</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            </select>
+                            </div>
+                
+                            <div><input type="number" class="number" min="0" max="6" required></div>
+                            </div>
+                            <div class="info">
+                                <div><input type="text"></div> 
+                                
+                                <div>
+                                <select name="option" id="option5" class="grade" required>
+                                    <option value="-">-</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                </select>
+                                </div>
+                    
+                                <div><input type="number" class="number" min="0" max="6" required></div>
+                                </div>
+                                <div class="info">
+                                    <div><input type="text"></div> 
+                                    
+                                    <div>
+                                    <select name="option" id="option6" class="grade" required>
+                                        <option value="-">-</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    </select>
+                                    </div>
+                        
+                                    <div><input type="number" class="number" min="0" max="6" required></div>
+                                    </div>
+                                    <div class="info">
+                                        <div><input type="text"></div> 
+                                        
+                                        <div>
+                                        <select name="option" id="option7" class="grade" required>
+                                            <option value="-">-</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="F">F</option>
+                                        </select>
+                                        </div>
+                            
+                                        <div><input type="number" class="number" min="0" max="6" required></div>
+                                        </div>
+                                        <div class="info">
+                                            <div><input type="text"></div> 
+                                            
+                                            <div>
+                                            <select name="option" id="option8" class="grade" required>
+                                                <option value="-">-</option>
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                            <option value="E">E</option>
+                                            <option value="F">F</option>
+                                            </select>
+                                            </div>
+                                
+                                            <div><input type="number" class="number" min="0" max="6" required></div>
+                                            </div>
+                                            <div class="info">
+                                                <div><input type="text"></div> 
+                                                
+                                                <div>
+                                                <select name="option" id="option9" class="grade" required>
+                                                    <option value="-">-</option>
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                                <option value="D">D</option>
+                                                <option value="E">E</option>
+                                                <option value="F">F</option>
+                                                </select>
+                                                </div>
+                                    
+                                                <div><input type="number" class="number" min="0" max="6" required></div>
+                                                </div>
+
+                                                <div class="info">
+                                                    <div><input type="text"></div> 
+                                                    
+                                                    <div>
+                                                    <select name="option" id="option10" class="grade" required>
+                                                        <option value="-">-</option>
+                                                    <option value="A">A</option>
+                                                    <option value="B">B</option>
+                                                    <option value="C">C</option>
+                                                    <option value="D">D</option>
+                                                    <option value="E">E</option>
+                                                    <option value="F">F</option>
+                                                    </select>
+                                                    </div>
+                                        
+                                                    <div><input type="number" class="number" min="0" max="6" required></div>
+                                                    </div>
+
+                                                    <div class="info">
+                                                        <div><input type="text"></div> 
+                                                        
+                                                        <div>
+                                                        <select name="option" id="option11" class="grade" required>
+                                                            <option value="-">-</option>
+                                                        <option value="A">A</option>
+                                                        <option value="B">B</option>
+                                                        <option value="C">C</option>
+                                                        <option value="D">D</option>
+                                                        <option value="E">E</option>
+                                                        <option value="F">F</option>
+                                                        </select>
+                                                        </div>
+                                            
+                                                        <div><input type="number" class="number" min="0" max="6" required></div>
+                                                        </div>
+        
+    
+
+                                                                                                                                                                                                
+        
+    </div>
+    <div class="buttons">
+        <button id="compute"> <span class="iconify" data-icon="ic:outline-calculate"></span> Compute GPA</button>
+        <div class="total" style="
+    color: whitesmoke; font-size: 18px; font-weight: bold; padding-right: 10px;">
+        <p>Total Unit Load = <span id='load' ></span> </p> 
+        <p>Grade Point Average = <span id='gp' style="font-size: 35px;" ></span> /5 </p>
+    </div>
+    
+    </div>
+    <script src="ArtificerGPChecker.js" >
+
+    </script>
+    
+</body>
+</html>
