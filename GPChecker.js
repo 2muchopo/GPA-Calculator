@@ -19,11 +19,8 @@
         var k = parseInt(numbers[10].value)
         var l = parseInt(numbers[11].value)
 
-       numbers.forEach(function(number){
-            if(number.value = 2){
-                console.log('zero')
-            }
-       })
+       
+       
         
         var m = a + b + c + d + e + f + g + h + i + j + k + l;
 
@@ -536,63 +533,4 @@
 
             })
         
-                /*switch(grade.value){
-                    case 'A':
-                       var x = 5;
-                       console.log(x)
-                        break;
-                    case 'B':
-                       var x = 4;
-                       console.log(x)
-                       break;
-                    case 'C':
-                        var x = 3;
-                        console.log(x)
-                            break;
-                    case 'D':
-                        var x = 2;
-                        console.log(x)
-                        break;
-                    case 'E':
-                        var x = 1;
-                        console.log(x)
-                        break;
-                    case 'F':
-                        var x = 0;
-                        console.log(x)
-                        break;
-               }
-               var z = document.getElementById('option2')
-                    z.innerText = x
-                    console.log(z)
-            })
-        
-            //3. Multiply grade points by the unit loads
-
-            
-            var n = (parseInt(grades[0].value) * a) + 
-                    (parseInt(grades[1].value) * b) +
-                    (parseInt(grades[2].value) * c) + 
-                    (parseInt(grades[3].value) * d) +
-                    (parseInt(grades[4].value) * e) + 
-                    (parseInt(grades[5].value) * f) +
-                    (parseInt(grades[6].value) * g) + 
-                    (parseInt(grades[7].value) * h) +
-                    (parseInt(grades[8].value) * i) + 
-                    (parseInt(grades[9].value) * j) +
-                    (parseInt(grades[10].value) * k) + 
-                    (parseInt(grades[11].value) * l);
-        
-            console.log(n);
-        
-            //4. Get the GP
-        
-            var p = (n/m).toFixed(2);
-        
-            gp.textContent = p; */
-        
-            
-        
-        
-        
-        
+                
