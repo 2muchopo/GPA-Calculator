@@ -4,7 +4,8 @@
         var compute = document.getElementById('compute');
         
         //Get the unit loads of the courses
-        compute.addEventListener('click', function(){
+        compute.addEventListener('click', function(e){
+            e.preventDefault()
         var numbers = document.querySelectorAll('.number')
         var a = parseInt(numbers[0].value)
         var b = parseInt(numbers[1].value)
