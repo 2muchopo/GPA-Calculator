@@ -20,6 +20,71 @@
         var k = parseInt(numbers[10].value)
         var l = parseInt(numbers[11].value)
 
+        if((numbers[0].value)== '' ){
+            
+
+            a = 0;
+        }
+        if((numbers[1].value)== '' ){
+            
+
+            b = 0;
+        }
+        if((numbers[2].value)== '' ){
+            
+
+            c = 0;
+        }
+        if((numbers[3].value)== '' ){
+            
+
+            d = 0;
+        }
+        if((numbers[4].value)== '' ){
+            
+
+            e = 0;
+        }
+        if((numbers[5].value)== '' ){
+            
+
+            f = 0;
+        }
+        if((numbers[6].value)== '' ){
+            
+
+            g = 0;
+        }
+        if((numbers[7].value)== '' ){
+            
+
+            h = 0;
+        }
+        if((numbers[8].value)== '' ){
+            
+
+            i = 0;
+        }
+        if((numbers[9].value)== '' ){
+            
+
+            j = 0;
+        }
+        if((numbers[10].value)== '' ){
+            
+
+            k = 0;
+        }
+        if((numbers[11].value)== '' ){
+            
+
+            l = 0;
+        }
+        
+        
+        
+        
+
        
        
         
@@ -517,6 +582,11 @@
                                 //4. Get the GP
         
                                 var p = (n/m).toFixed(2);
+
+                                if (m==0 && n==0){
+                                    p = 0;
+                                    console.log('it is a number')
+                                }
         
                                  gp.textContent = p;
                             
